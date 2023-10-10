@@ -1,0 +1,229 @@
+.alphaHeader{
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5px 10px 5px;
+}
+.alphaSubHeader{
+    font-size: 30px;
+    text-align: center;
+    font-style:oblique;
+    margin: 0 auto;
+    padding: 5px 5px 10px 5px;
+}
+.espnLink{
+    font-size: 20px;
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 5px 20px 5px;
+}
+.alphaPics{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 10px;
+    row-gap: 45px;
+    align-content: center;
+    padding: 20px 500px 20px 500px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.browserRoster{
+    width: 375px;
+    height: 400px;
+    align-content: center;
+    justify-content: center;
+}
+.espnTD{
+    width: 325px;
+    height: 400px;
+    align-content: center;
+    justify-content: center;
+}
+.concept{
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5px 10px 5px;
+}
+.descriptions{
+    text-align: left;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 45px;
+    row-gap: 45px;
+    align-content: center;
+    padding: 20px 50px 20px 50px;
+}
+
+
+@media all and (max-width:1800px)
+{
+    .espnTD{
+        width: auto;
+        height: 300px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 300px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    }
+}
+
+@media all and (max-width:1600px)
+{
+    .espnTD{
+        width: auto;
+        height: 260px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 260px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+@media all and (max-width:1520px)
+{
+    .espnTD{
+        width: auto;
+        height: 240px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 240px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .alphaHeader{
+        font-size: 35px;
+    }
+    .alphaSubHeader{
+            font-size: 25px;
+    }
+    .espnLink{
+        font-size: 25px;
+    }
+
+}
+@media all and (max-width:1465px)
+{
+    .espnTD{
+        width: auto;
+        height: 220px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 220px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+    .alphaHeader{
+        font-size: 30px;
+    }
+    .alphaSubHeader{
+            font-size: 20px;
+    }
+    .espnLink{
+        font-size: 20px;
+    }
+    .descriptions{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:1405px)
+{
+    .espnTD{
+        width: auto;
+        height: 200px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 200px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+    .alphaHeader{
+        font-size: 27px;
+    }
+    .alphaSubHeader{
+            font-size: 14px;
+    }
+    .espnLink{
+        font-size: 14px;
+    }
+    .descriptions{
+        font-size: 17px;
+    }
+}
+@media all and (max-width:1065px)
+{
+    .espnTD{
+        width: auto;
+        height: 200px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 200px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+    .alphaHeader{
+        font-size: 27px;
+    }
+    .alphaSubHeader{
+        font-size: 16px;
+    }
+    .espnLink{
+        font-size: 15px;
+    }
+    .concept{
+        font-size: 16px;
+    }
+    .descriptions{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:150px)
+{
+    .espnTD{
+        width: auto;
+        height: 10px;
+    }
+    .browserRoster{
+        width: auto;
+        height: 10px;
+    }
+    .alphaPics{
+        grid-template-columns: repeat(auto-fit, minmax(100åpx, 1fr));
+    }
+    .alphaHeader{
+        font-size: 10px;
+    }
+    .alphaSubHeader{
+        font-size: 7px;
+    }
+    .espnLink{
+        font-size: 7px;
+    }
+    .concept{
+        font-size: 7px;
+    }
+    .descriptions{
+        font-size: 7px;
+    }
+}
