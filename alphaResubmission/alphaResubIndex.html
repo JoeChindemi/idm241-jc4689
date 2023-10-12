@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<link rel="stylesheet" href="alphaResubStyle.css">
+<link rel="stylesheet" href="alphaFonts/BebasNeue Bold.ttf" />
+<head>
+    <div class="header">
+        <h1>NBA ID Sign-In</h1>
+        <p>Joe Chindemi - IDM-241-001 Microinteractions</p>
+      </div>
+</head>
+
+<body>
+<div class = "details">
+    <div class = "triggers">
+        <p class = "triggersHeader">TRIGGERS</p> 
+        <ul class = "triggersList">
+        <li>Users can initiate the &quot;Sign In&quot; button with a click, which triggers a microinteraction.</li>
+        </ul>
+
+    </div>
+    <div class = "rules">
+        <p class = "rulesHeader">RULES</p>
+        <ul class = "rulesList">
+        <li>If an email or password is not entered and the &quot;Sign In&quot; button is triggered, then a <span class = "redReq">red requirement message</span> will pop up below the email or password section asking for a valid input.</li>
+        <li>If an invalid email or password is entered and the &quot;Sign In&quot; button is triggered, then a <span class = "redReq">red requirement message</span> will pop up below the email or password section asking for a valid input.</li>
+        <li>If a valid email and password is entered and the &quot;Sign In&quot; button is triggered, a short loading window will overlay the screen.  Then, the user is transfered to the homepage fully signed into their account.</li>
+        </ul>
+    </div>
+    <div class = "feedback">
+        <p class = "feedbackHeader">FEEDBACK</p>
+        <ul class = "feedbackList">
+        <li>When a user activley hovers on the &quot;Sign In&quot; button, the button changes from a black background with white text to a white background with black text and a black border.  This signifys a potential trigger for the user to initiate. </li>
+        <li>When a user activley hovers on the &quot;Sign In&quot; button, the mouse changes to a clicker icon to signify an interactive element.</li>
+        <li>When email or password is incorrect or not entered and a user triggers the &quot;Sign In&quot; button, the <span class = "redReq">red requirement message</span> will pop up signifying an incorrect entry.  This also encourages the user to try again with feedback on why their entry did not work. </li>
+        <li>When the email and password is correct and the user triggers the &quot;Sign In&quot; button, the user will be presented an overly loading screen that signifies that the microinteraction has been properly initiated.  This loading screen consists of a 50% grey overlay with a quick loading wheel animation. </li>
+        </ul>
+    </div>
+    <div class = "loopsModes">
+        <p class = "loopsModesHeader">LOOPS/MODES</p>
+        <ul class = "loopsModesList">
+        <li>Once the user signs in to their account, there is no longer a sign in option available.</li>
+        <li>In order to access the sign in again, users must click the &quot;Sign Out&quot; button on the menu bar or in their settings.</li>
+        <li>NBA.com will remember the user's NBA ID upon revisiting the site, unless the user chooses to sign out.</li>
+        </ul>
+    </div>
+    
+    <div class = "gifCenter">
+    <figure class = "gifCaption">
+        <img src="./alphaImages/signIn.gif" class="signInGif" alt="Sign-in gif">
+        <figcaption><a href="https://www.nba.com/account/sign-in">Click to see the NBA.com sign-in</a></figcaption>
+    </figure>
+    </div>
+
+</div>
+</body>
+</html>

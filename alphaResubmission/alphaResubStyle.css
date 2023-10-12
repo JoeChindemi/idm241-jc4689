@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url(alphaFonts/BebasNeue\ Bold.ttf);;
+}
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url(alphaFonts/BebasNeue\ Book.ttf);;
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url(alphaFonts/BebasNeue\ Regular.ttf);;
+}
+
+body{
+    background-color: rgb(237, 237, 237);
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(23, 64, 139);
+    color: white;
+    font-size: 99%;
+    font-family: "BebasNeueBold", saans-serif;
+    letter-spacing: 1px;
+    border-color: rgb(201, 8, 42);
+}
+
+.details {
+    font-size: 20px;
+    font-family: "BebasNeueRegular", saans-serif;
+    line-height: 1.6;;
+}
+
+.redReq{
+    color: red;
+}
+
+.triggers{
+    border: 1px solid black;
+    padding: 15px;
+    max-width: 50%;
+    margin:auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+}
+.triggersHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.rules{
+    border: 1px solid black;
+    padding: 15px;
+    max-width: 50%;
+    margin:auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+}
+.rulesHeader{
+      padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.feedback{
+    border: 1px solid black;
+    padding: 15px;
+    max-width: 50%;
+    margin:auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+}
+.feedbackHeader{
+      padding: 5px 0;
+  padding-left: 15px;
+  width: calc(100% + 15px);
+  margin: -15px -15px 0 -15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.loopsModes{
+    border: 1px solid black;
+    padding: 15px;
+    max-width: 50%;
+    margin:auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+}
+.loopsModesHeader{
+      padding: 5px 0;
+  padding-left: 15px;
+  width: calc(100% + 15px);
+  margin: -15px -15px 0 -15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.gifCenter{
+    text-align: center;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+@media all and (max-width:660px)
+{
+    .triggers{
+        border: 1px solid black;
+    padding: 15px;
+    max-width: fit-content;
+    margin:auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    }
+    .triggersHeader{
+        padding: 5px 0;
+        padding-left: 15px;
+        width: calc(100% + 15px);
+        margin: -15px -15px 0 -15px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .rules{
+        max-width: fit-content;
+    }
+    .rulesHeader{
+        padding: 5px 0;
+        padding-left: 15px;
+        width: calc(100% + 15px);
+        margin: -15px -15px 0 -15px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .feedback{
+        max-width: fit-content;
+    }
+    .feedbackHeader{
+        padding: 5px 0;
+        padding-left: 15px;
+        width: calc(100% + 15px);
+        margin: -15px -15px 0 -15px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .loopsModes{
+        max-width: fit-content;
+    }
+    .loopsModesHeader{
+        padding: 5px 0;
+        padding-left: 15px;
+        width: calc(100% + 15px);
+        margin: -15px -15px 0 -15px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .gifCenter{
+        text-align: center;
+    }
+
+    figure img{
+        max-width: 100%;
+    }
+ 
+}
