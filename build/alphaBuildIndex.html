@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="en">
+    <link rel="stylesheet" href="alphaBuild.css">
+    <link rel="stylesheet" href="alphaBuildFonts/RobotoReg.ttf" />
+    <link rel="stylesheet" href="alphaBuildFonts/BebasBold.ttf" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="alphaBuild.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bannerHeader">
+        <h1">NBA ID Sign-In (Hover Button Loading Screen)</h1>
+        <p>Joe Chindemi - IDM-241-001 Microinteractions</p>
+    </div>
+    <div class="externalWrapper">
+        <div class="centerWrapper">
+            <img src="./alphaBuildImages/nbaIdTrim.png" class="nbaIdImage" alt="nbaID">
+            <h class="header2">SIGN IN WITH YOUR NBA ID</h>
+            <div class="signInWrapper">
+                <p class="email">Email</p>
+                <p class="password">Password</p>
+                <p class="forgotPass">Forgot password?</p>
+                <a class="button" onClick="spinner();">Sign In</a>
+                <p class="dontHave">Don't have an NBA ID?</p>
+            </div>
+        </div>
+    </div>
+    <div class="loaderOverlay">
+        <div class="loading"></div>
+    </div>
+    <div class = "details">
+        <div class = "triggers">
+            <p class = "triggersHeader">TRIGGERS</p> 
+            <ul class = "triggersList">
+            <li>To start the interaction, users initiate the &quot;Sign In&quot; button with a click.</li>
+            </ul>
+        </div>
+        <div class = "rules">
+            <p class = "rulesHeader">RULES</p>
+            <ul class = "rulesList">
+            <li>The only way this interaction is triggered is when the user correctly inputs their information and clicks on the &quot;Sign In&quot; button. </li>
+            <li>NBA.com will remember the user's NBA ID upon revisiting the site, unless the user chooses to sign out.</li>
+            </ul>
+        </div>
+        <div class = "feedback">
+            <p class = "feedbackHeader">FEEDBACK</p>
+            <ul class = "feedbackList">
+            <li>When a user activley hovers on the &quot;Sign In&quot; button, the button changes from a black background with white text to a white background with black text and a black border.  This signifys a potential trigger for the user to initiate. </li>
+            <li>When a user activley hovers on the &quot;Sign In&quot; button, the mouse changes to a clicker icon to signify an interactive element.</li>
+            <li>When a user clicks on the &quot;Sign In&quot; button and their information is valid, a short loading overlay will appear.</li>
+            <li>The low-opacity, grey overlay is displayed on the full screen with an animated loading circle.  This sequence only lasts for a second before the sign-in is &quot;initiated&quot; and the overlay fades away.</li>
+            </ul>
+        </div>
+        <div class = "loopsModes">
+            <p class = "loopsModesHeader">LOOPS/MODES</p>
+            <ul class = "loopsModesList">
+            <li>Once the user signs in to their account, there is no longer a sign in option available.</li>
+            <li>In order to access the sign in again, users must click the &quot;Sign Out&quot; button on the menu bar or in their settings.  After they have signed out, they can sign back in and retrigger the button loading sequence.</li>
+            </ul>
+        </div>
+    <div class = "linkDiv">
+    <a href="https://www.nba.com/account/sign-in" target="_blank">Click to see the NBA.com sign-in</a>
+    </div>
+
+</body>
+
+</html>
