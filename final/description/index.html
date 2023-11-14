@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Description</title>
+    <link rel="icon" href="./images/swish.gif">
+    <html lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./fonts/RobotoReg.ttf" />
+    <link rel="stylesheet" href="./fonts/BebasBold.ttf" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="alphaBuild.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bannerHeader">
+        <h1">NBA ID Sign-In Final Description</h1>
+        <p>Joe Chindemi - IDM-241-001 Microinteractions</p>
+    </div>
+    <div class = "linkDiv">
+        <a href="https://www.nba.com/account/sign-in" target="_blank">Click to see the NBA.com sign-in</a>
+    </div>
+    <div class = "details">
+        <div class = "triggers">
+            <p class = "triggersHeader">TRIGGERS</p> 
+            <ul class = "triggersList">
+            <li>Hovering on the &quot;Sign In&quot; button.</li>
+            <li>Hovering off the &quot;Sign In&quot; button.</li>
+            <li>Clicking on the &quot;Sign In&quot; button with the correct sign-in information.</li>
+            <li>Clicking on the &quot;Sign In&quot; button with the incorrect sign-in information.</li>
+            <li>Clicking on the &quot;Sign In&quot; button while one/both of the input boxes are left empty.</li>
+            </ul>
+        </div>
+        <div class = "rules">
+            <p class = "rulesHeader">RULES</p>
+            <p class="rulesHeadHover">HOVER ON/OFF SIGN IN BUTTON</p>
+            <ul class = "rulesListHover">
+                <li>ON: &quot;Sign-In&quot; button adopts a white background with black text and a black border.</li>
+                <li>ON: &quot;Sign-In&quot; button cursor changes to a hand pointer.</li>
+                <li>OFF: &quot;Sign-In&quot; button changes back to it's original black background with white text while keeping the black border.</li>
+                <li>OFF: &quot;Sign-In&quot; button cursor changes back to the standard pointer arrow. </li>
+            </ul>
+            <p class="rulesHeadClickSuccess">CLICK ON SIGN IN BUTTON: CORRECT INFO</p>
+            <ul class = "rulesListClickSuccess">
+                <li>Sign-in information is being processed</li>
+                <li>Logo div on right side will fade to a GIF of a basketball being scored to signify a succesful sign-in.</li>
+            </ul>
+            <p class="rulesHeadClickFail">CLICK ON SIGN IN BUTTON: INCORRECT INFO</p>
+            <ul class = "rulesListClickFail">
+                <li>Sign-in information is being processed</li>
+                <li>Logo div on right side will fade to a GIF of a basketball clanking off the rim to show an unsuccesful sign-in.</li>
+                <li>Logo div on right side will also ask the user to try again.</li>
+            </ul>
+            <p class="rulesHeadRef">CLICK ON SIGN IN BUTTON: EMPTY INPUT TEXT</p>
+            <ul class = "rulesListRef">
+                <li>Sign-in information is being processed</li>
+                <li>If the any input box is left empty when the sign-in button gets clicked, a small GIF of a referee will fade in and blow a whistle.</li>
+                <li>Once the user starts to fill in the input box, the referee will fade away.</li>
+                <li>Input text will turn red to signify the error.</li>
+            </ul>
+        </div>
+        <div class = "feedback">
+            <p class = "feedbackHeader">FEEDBACK</p>
+            <p class="feedbackHeadHover">HOVER ON/OFF SIGN IN BUTTON</p>
+            <ul class = "feedbackListHover">
+                <li>ON: &quot;Sign-In&quot; button adopts a white background with black text and a black border.</li>
+                <li>ON: &quot;Sign-In&quot; button cursor changes to a hand pointer.</li>
+                <li>OFF: &quot;Sign-In&quot; button changes back to it's original black background with white text while keeping the black border.</li>
+                <li>OFF: &quot;Sign-In&quot; button cursor changes back to the standard pointer arrow. </li>
+            <br>
+            </ul>
+            <p class="feedbackHeadClick">CLICK ON SIGN IN BUTTON: CORRECT INFO</p>
+            <ul class = "feedbackListClick">
+                <li>Logo div on right side will fade to a GIF of a basketball being scored to signify a succesful sign-in.</li>
+            </ul>
+            <p class="feedbackHeadClickFail">CLICK ON SIGN IN BUTTON: INCORRECT INFO</p>
+            <ul class = "feedbackListClickFail">
+                <li>Logo div on right side will fade to a GIF of a basketball clanking off the rim to show an unsuccesful sign-in.</li>
+                <li>Logo div on right side will also ask the user to try again.</li>
+            </ul>
+            <p class="feedbacmHeadRef">CLICK ON SIGN IN BUTTON: EMPTY INPUT TEXT</p>
+            <ul class = "feedbackListRef">
+                <li>If the any input box is left empty when the sign-in button gets clicked, a small GIF of a referee will fade in and blow a whistle.</li>
+                <li>Once the user starts to fill in the input box, the referee will fade away.</li>
+                <li>Input text will turn red to signify the error.</li>
+            </ul>
+        </div>
+        <div class = "loopsModes">
+            <p class = "loopsModesHeader">LOOPS/MODES</p>
+            <ul class = "loopsModesList">
+                <li>Loops: None</li>
+                <li>Modes: If the sign-in information is incorrect, the missed shot gif will display.  If the information is correct, the swish gif will display. </li>
+            </ul>
+        </div>
+    <div class="images">
+        <img class="logInGif" src="./images/signIn.gif" alt="sign in gif">
+        <img class="basketballGif" src="./images/swish.gif" alt="swish">
+    </div>
+    <div class="images">
+        <img class="missGif" src="./images/missSmall.gif" alt="miss">
+        <img class="refGif" src="./images/ref.gif" alt="ref">
+    </div>
+</body>
+
+</html>
