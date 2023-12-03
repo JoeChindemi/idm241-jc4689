@@ -1,0 +1,484 @@
+/* IMPORT FONTS */
+@font-face{
+    font-family: 'RobotoReg';
+    src: url(./fonts/Roboto-Regular.ttf);
+    ;
+}
+
+@font-face{
+    font-family: 'BebasNeueBook';
+    src: url(./fonts/BebasNeue\ Book.ttf);
+    ;
+}
+
+@font-face{
+    font-family: 'BebasNeueRegular';
+    src: url(./fonts/BebasNeue\ Regular.ttf);
+    ;
+}
+
+@font-face{
+    font-family: 'BebasBold';
+    src: url(./fonts/BebasNeue\ Bold.ttf);
+}
+
+/* GENERAL BODY CSS FOR BACKGROUND COLOR/GENERAL FONTS */
+body{
+    background-color: rgb(246, 246, 246);
+    font-family: 'RobotoReg';
+}
+
+.bannerHeader{
+    width:100%;
+    padding: 1px;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    background: rgb(14, 46, 161);
+    color: white;
+    font-size: 99%;
+    font-family: 'BebasBold';
+    letter-spacing: 1px;
+    border-color: rgb(201, 8, 42);
+    margin-bottom: 50px;
+}
+
+/* FLEXWRAP & IT'S INTERNAL WRAPPERS */
+.flexwrap{
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    margin-bottom: 50px;
+}
+
+.signInWrapper{
+    text-align: center;
+    background-color: white;
+    max-width: 85%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+
+.signInWrapper button{
+    background-color: #000000;
+    /* Green */
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 40%;
+    transition-duration: 0.2s;
+    font-family: 'BebasBold';
+    margin-top: 10px;
+}
+
+.signInWrapper button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.nbaIdImage{
+    max-width: 35px;
+    display: flex;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.header2{
+    font-family: 'BebasBold';
+    font-size: 36px;
+    display: block;
+    text-align: left;
+    line-height: .85;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.errorImage{
+    opacity: 0;
+    filter: alpha(opacity=40);
+    width:100px;
+    float:right;
+    margin-top: -100px;
+}
+  
+
+.email{
+    text-align: left;
+    color: rgb(58, 58, 58);
+    padding: 30px;
+    text-decoration-line: underline;
+}
+
+.password{
+    text-align: left;
+    color: rgb(58, 58, 58);
+    padding: 30px;
+    margin-top: -30px;
+    text-decoration-line: underline;
+}
+
+.forgotPass{
+    text-align: right;
+    font-size: 14px;
+    text-decoration-line: underline;
+    padding: 20px;
+}
+
+.dontHave{
+    text-decoration-line: underline;
+    padding: 10px;
+}
+
+.sideGif{
+    width:125px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.sideGif img{
+    width:185px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.gridContainer{  
+    padding:20px;
+    font-family: "RobotoReg";
+    text-align: left;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+    margin-left: 20px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.gridContainer input{
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding:5px;
+}
+
+/* DETAILS */
+.details{
+    font-size: 20px;
+    font-family: "BebasNeueRegular", saans-serif;
+    line-height: 1.6;
+    ;
+}
+
+.triggers{
+    border: 1px solid rgb(14, 46, 161);
+    padding: 15px;
+    max-width: 50%;
+    margin: auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.triggersList{
+    font-family: "RobotoReg";
+}
+
+.triggersHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color: rgb(14, 46, 161);
+    color: white;
+    text-align: center;
+}
+
+.hints{
+    border: 1px solid rgb(201, 8, 42);
+    padding: 15px;
+    max-width: 50%;
+    margin: auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.hintsList{
+    font-family: "RobotoReg";
+}
+
+.hintsHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color:  rgb(201, 8, 42);
+    color: white;
+    text-align: center;
+}
+
+.rules{
+    border: 1px solid rgb(14, 46, 161);
+    padding: 15px;
+    max-width: 50%;
+    margin: auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.rulesHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color: rgb(14, 46, 161);
+    color: white;
+    text-align: center;
+}
+
+.rulesHeadHover,.rulesHeadClick,.feedbackHeadHover,.feedbackHeadClick,.rulesHeadClickFail,.rulesHeadRef,.feedbackHeadClickFail,.feedbacmHeadRef,.feedbackHeadClick,.rulesHeadClickSuccess,.loopsHeader,.modesHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: 10px 0px 0 -15px;
+    color:rgb(201, 8, 42);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.rulesListHover,.feedbackListClick,.feedbackListHover,.rulesListClick,.rulesListClickSuccess,.rulesListClickFail,.rulesListRef,.feedbackListClick,.feedbackListClickFail,.feedbackListRef{
+    font-family: "RobotoReg";
+}
+
+.feedback{
+    border: 1px solid rgb(14, 46, 161);
+    padding: 15px;
+    max-width: 50%;
+    margin: auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.feedbackHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color:rgb(14, 46, 161);
+    color: white;
+    text-align: center;
+}
+
+.feedbackList{
+    font-family: "RobotoReg";
+}
+
+.loopsModes{
+    border: 1px solid rgb(14, 46, 161);
+    padding: 15px;
+    max-width: 50%;
+    margin: auto;
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    background-color: white;
+}
+
+.loopsModesHeader{
+    padding: 5px 0;
+    padding-left: 15px;
+    width: calc(100% + 15px);
+    margin: -15px -15px 0 -15px;
+    background-color: rgb(14, 46, 161);
+    color: white;
+    text-align: center;
+}
+
+.loopsList,.modesList{
+    font-family: "RobotoReg";
+}
+
+.linkDiv{
+    font-family: "RobotoReg";
+    text-align: center;
+    padding: 10px;
+}
+
+.linkDiv a:link{
+    color:rgb(14, 46, 161);
+}
+
+.linkDiv a:visited{
+    color:rgb(88, 88, 122);
+}
+
+.linkDiv a:hover{
+    color: rgb(201, 8, 42);
+}
+
+/*MEDIA QUERIES*/
+@media all and (max-width:650px) {
+
+    .externalWrapper{
+        max-width: 93%;
+    }
+    .signInWrapper{
+        max-width:100%
+    }
+    .hints{
+        max-width: 85%;
+    }
+    .triggers{
+        max-width: 85%;
+    }
+    .rules{
+        max-width: 85%;
+    }
+    .feedback{
+        max-width: 85%;
+    }
+    .loopsModes{
+        max-width: 85%;
+    }
+    .details{
+        font-size: 17px;
+    }
+}
+
+@media all and (min-width:650px) {
+    .externalWrapper{
+        max-width:566px;
+    }
+    .centerWrapper{
+        max-width: 645px;
+    }
+    .signInWrapper{
+        max-width: 566px;
+    }
+    .hints{
+        max-width: 540px;
+    }
+    .triggers{
+        max-width: 540px;
+    }
+    .rules{
+        max-width: 540px;
+    }
+    .feedback{
+        max-width: 540px;
+    }
+    .loopsModes{
+        max-width: 540px;
+    }
+    .details{
+        font-size: 17px;
+    }
+}
+
+@media all and (min-width:768px) {
+    .bannerHeader{
+        font-size: 24px;
+    }
+    .header2{
+        font-size: 40px;
+        max-width: 70%;
+    }
+    .hintsHeader{
+        font-size: 24px;
+    }
+    .triggersHeader{
+        font-size: 24px;
+    }
+    .rulesHeader{
+        font-size: 24px;
+    }
+    .feedbackHeader{
+        font-size: 24px;
+    }
+    .loopsModesHeader{
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width:767px){
+    .sideGif img{
+        width:170px;
+    }
+    .flexwrap{
+        column-gap: 5%;
+    }
+    .errorImage{
+        /* display:none; */
+        width:85px;
+        margin-top: -85px;
+    }
+}
+
+@media all and (min-width:440px){
+    .header2{
+        font-size: 38px;
+        max-width: 72%;
+    }
+}
+
+@media all and (max-width:440px){
+    .flexwrap{
+        display:block;
+    }
+    .sideGif{
+        margin:0 auto;
+        align-items:center ;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .sideGif img{
+        width:120px;
+    }
+    .header2{
+        font-size: 34px;
+        max-width: 80%;
+    }
+    .errorImage{
+        width:80px;
+        margin-top: -80px;
+    }
+}
+
+@media all and (max-width:370px){
+    .header2{
+        font-size: 28px;
+        max-width: 80%;
+    }
+}
+
+@media all and (max-width:370px){
+    .linkDiv{
+        font-size: 15px;
+    }
+}

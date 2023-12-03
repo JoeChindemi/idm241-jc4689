@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="favicon" type="image/x-icon" href="./images/logoResize.png">
+    <script src="script.js"></script>
+    <title>Joe Chindemi IDM 241 Final Build</title>
+</head>
+
+<body>
+    <!--Banner div for header and subtitle-->
+    <div class="bannerHeader">
+        <h1">NBA ID Final Build</h1>
+        <p>Joe Chindemi - IDM-241-001 Microinteractions</p>
+    </div>
+
+    <!--Flex container for sign in module and side gif image -->
+    <div class="flexwrap">
+        <div>
+            <img src="./images/nbaIdTrimKb.png" class="nbaIdImage" alt="nbaID">
+            <h class="header2">SIGN IN WITH YOUR NBA ID</h>
+            <img src="./images/finalBlank2.gif" class="errorImage" id="errorImage" alt="Error Image">
+            <div class="signInWrapper">
+                <div class="gridContainer">
+                    <p id="emailHeader">Email:</p>
+                    <p><input type="text" id="emailInput"></input></p>
+                    <p id="pswdHeader">Password:</p>
+                    <p><input type="password" id="pswdInput"></input></p>
+                </div>
+                <div>
+                    <p class="forgotPass">Forgot password?</p>
+                    <button onClick="checkSubmit()">Sign In</button>
+                    <p class="dontHave">Don't have an NBA ID?</p>
+                </div> 
+            </div>
+        </div>
+        <div class = "sideGif">
+            <img id="sideImg" src="./images/./logoResize.png" alt="neutralID">
+        </div>
+    </div>
+
+   
+    <!--Details div: Contains hints, triggers, rules, feedback. and loops/modes -->
+    <div class = "details">
+        <div class="hints">
+            <p class = "hintsHeader">CORRECT SIGN-IN INFORMATION</p> 
+            <ul class = "hintsList">
+            <li>Email: nba@gmail.com</li>
+            <li>Password: slamdunk</li>
+            </ul>
+        </div>
+        <div class = "triggers">
+            <p class = "triggersHeader">TRIGGERS</p> 
+            <ul class = "triggersList">
+            <li>Hovering on the &quot;Sign In&quot; button.</li>
+            <li>Hovering off the &quot;Sign In&quot; button.</li>
+            <li>Clicking on the &quot;Sign In&quot; button with the correct sign-in information.</li>
+            <li>Clicking on the &quot;Sign In&quot; button with the incorrect sign-in information.</li>
+            <li>Clicking on the &quot;Sign In&quot; button while one/both of the input boxes are left empty.</li>
+            </ul>
+        </div>
+        <div class = "rules">
+            <p class = "rulesHeader">RULES</p>
+            <p class="rulesHeadHover">HOVER ON/OFF SIGN IN BUTTON</p>
+            <ul class = "rulesListHover">
+                <li>ON: &quot;Sign-In&quot; button adopts a white background with black text and a black border.</li>
+                <li>ON: &quot;Sign-In&quot; button cursor changes to a hand pointer.</li>
+                <li>OFF: &quot;Sign-In&quot; button changes back to it's original black background with white text while keeping the black border.</li>
+                <li>OFF: &quot;Sign-In&quot; button cursor changes back to the standard pointer arrow. </li>
+            </ul>
+            <p class="rulesHeadClickSuccess">CLICK ON SIGN IN BUTTON: CORRECT INFO</p>
+            <ul class = "rulesListClickSuccess">
+                <li>Sign-in information is being processed.</li>
+                <li>Information database is being updated.</li>
+                <li>Logo div on right side will fade to a GIF of a basketball being scored to signify a succesful sign-in.</li>
+                <li>Logo div GIF on right side will also contain text that says "SIGN IN SUCCESSFUL!".</li>
+                <li>Email and password paragraph text will turn dark green to signify a successful sign-in.</li>
+                <li>Input boxes will turn pale green to signify a successful sign-in.</li>
+            </ul>
+            <p class="rulesHeadClickFail">CLICK ON SIGN IN BUTTON: INCORRECT INFO</p>
+            <ul class = "rulesListClickFail">
+                <li>Sign-in information is being processed.</li>
+                <li>Information database is being updated.</li>
+                <li>Logo div on right side will fade to a GIF of a basketball clanking off the rim to show an unsuccesful sign-in.</li>
+                <li>Logo div GIF on right side will also contain text that says "UNSUCESSFUL... TRY AGAIN".</li>
+                <li>Email and password paragraph text will turn dark red to signify an unsuccessful sign-in.</li>
+                <li>Input boxes will turn pale red to signify an unsuccessful sign-in.</li>
+            </ul>
+            <p class="rulesHeadRef">CLICK ON SIGN IN BUTTON: EMPTY INPUT TEXT</p>
+            <ul class = "rulesListRef">
+                <li>Sign-in information is being processed.</li>
+                <li>Information database is being updated.</li>
+                <li>If any input box is left empty when the sign-in button gets clicked, a small GIF of a referee will fade in and display a "TIMEOUT!" message to signify the error.</li>
+                <li>Email and password paragraph text will turn dark red to signify the error.</li>
+                <li>Input boxes will turn pale red to signify the error.</li>
+            </ul>
+        </div>
+        <div class = "feedback">
+            <p class = "feedbackHeader">FEEDBACK</p>
+            <p class="feedbackHeadHover">HOVER ON/OFF SIGN IN BUTTON</p>
+            <ul class = "feedbackListHover">
+                <li>ON: &quot;Sign-In&quot; button adopts a white background with black text and a black border.</li>
+                <li>ON: &quot;Sign-In&quot; button cursor changes to a hand pointer.</li>
+                <li>OFF: &quot;Sign-In&quot; button changes back to it's original black background with white text while keeping the black border.</li>
+                <li>OFF: &quot;Sign-In&quot; button cursor changes back to the standard pointer arrow. </li>
+            <br>
+            </ul>
+            <p class="feedbackHeadClick">CLICK ON SIGN IN BUTTON: CORRECT INFO</p>
+            <ul class = "feedbackListClick">
+                <li>Logo div on right side will fade to a GIF of a basketball being scored to signify a succesful sign-in.</li>
+                <li>Logo div GIF on right side will also contain text that says "SIGN IN SUCCESSFUL !".</li>
+                <li>Email and password paragraph text will turn dark green to signify a successful sign-in.</li>
+                <li>Input boxes will turn pale green to signify a successful sign-in.</li>
+            </ul>
+            <p class="feedbackHeadClickFail">CLICK ON SIGN IN BUTTON: INCORRECT INFO</p>
+            <ul class = "feedbackListClickFail">
+                <li>Logo div on right side will fade to a GIF of a basketball clanking off the rim to show an unsuccesful sign-in.</li>
+                <li>Logo div GIF on right side will also contain text that says "UNSUCESSFUL... TRY AGAIN".</li>
+                <li>Email and password paragraph text will turn dark red to signify the error.</li>
+                <li>Input boxes will turn pale red to signify the error.</li>
+            </ul>
+            <p class="feedbacmHeadRef">CLICK ON SIGN IN BUTTON: EMPTY INPUT TEXT</p>
+            <ul class = "feedbackListRef">
+                <li>If any input box is left empty when the sign-in button gets clicked, a small GIF of a referee will fade in and display a "TIMEOUT!" message to signify the error.</li>
+                <li>Email and password paragraph text will turn dark red to signify the error.</li>
+                <li>Input boxes will turn pale red to signify the error.</li>
+            </ul>
+        </div>
+        <div class = "loopsModes">
+            <p class = "loopsModesHeader">LOOPS/MODES</p>
+            <p class="loopsHeader">LOOPS</p>
+            <ul class = "loopsList">
+                <li>None.</li>
+            </ul>
+            <p class="modesHeader">MODES</p>
+            <ul class = "modesList">
+                <li>If the information is incorrect and the &quot;Sign In&quot; button is clicked, the unsuccessful GIF and red warnings are displayed.  But then if the correct information is input and the button gets clicked again, the unsuccesful GIF will switch to the succesful GIF and the red warnings will switch to green (and vice versa).</li>
+                <li>If the input boxes are empty and the &quot;Sign In&quot; button is clicked, the ref warning GIF and red warnings will display.  But then if the input boxes are filled in and the button gets clicked again, the ref warning GIF will dissapear. However, if the input info entered happens to be incorrect, then the red warnings will stay on screen and the unsuccesful GIF displays.  If the input info happens to be correct, then the red warnings change to green and the succesful GIF displays.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Link div that gives user chance to navigate to the original NBA.com sign in-->
+    <div class = "linkDiv">
+        <a href="https://www.nba.com/account/sign-in" target="_blank">Click to see the original NBA.com sign-in</a>
+    </div>
+
+</body>
+
+</html>
