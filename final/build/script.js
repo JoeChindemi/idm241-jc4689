@@ -4,7 +4,7 @@ function changeImage(){
     setTimeout(()=>{
         sideImg.src="./images/./finalSucess.gif";
         fadeIn(sideImg);
-    },250);
+    },125);
 }
 
 // Change image function fades in the unsuccesful sign in miss GIF, using a delau to properly time the sequence
@@ -13,7 +13,7 @@ function changeImageError(){
     setTimeout(()=>{
         sideImg.src="./images/./finalUnsucess.gif";
         fadeIn(sideImg);
-    },250);
+    },125);
 }
 
 // The check submit function extracts user input data from text entered into the forms with getElementID.  This extracted sign in data is then assigned to multiple vars, which is then passed through if statements to determine which image to display based on the situation
@@ -86,7 +86,7 @@ function checkSubmit(){
 function fadeIn(el){
     el.style.opacity = 0;
     var tick = function () {
-        el.style.opacity = +el.style.opacity + 0.05;
+        el.style.opacity = +el.style.opacity + 0.025;
         if (+el.style.opacity < 1) {
             (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
         }
@@ -97,7 +97,7 @@ function fadeIn(el){
 function fadeOut(el){
         el.style.opacity = 1;
         var tick = function () {
-            el.style.opacity = +el.style.opacity - 0.05;
+            el.style.opacity = +el.style.opacity - 0.025;
             if (+el.style.opacity > 0) {
                 (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
             }
