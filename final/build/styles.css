@@ -100,6 +100,7 @@ body{
     max-width: 100%;
     padding-top: 10px;
     padding-bottom: 5px;
+    cursor:default;
 }
 
 .errorImage{
@@ -131,12 +132,22 @@ body{
     font-size: 14px;
     text-decoration-line: underline;
     padding: 20px;
+    cursor:default;
 }
 
 .dontHave{
     text-decoration-line: underline;
     padding: 10px;
+    cursor:default;
 }
+
+.gridContainer #emailHeader,.gridContainer #pswdHeader{
+    cursor:default;
+}
+
+.gridContainer #emailHeader,.gridContainer #pswdHeader,.gridContainer #emailInput,.gridContainer #pswdInput{
+    transition: all .5s ease 0s; 
+} 
 
 .sideGif{
     width:125px;
@@ -214,7 +225,7 @@ body{
 }
 
 .hints{
-    border: 1px solid rgb(201, 8, 42);
+    border: 1px solid #265d2c;
     padding: 15px;
     max-width: 50%;
     margin: auto;
@@ -233,7 +244,7 @@ body{
     padding-left: 15px;
     width: calc(100% + 15px);
     margin: -15px -15px 0 -15px;
-    background-color:  rgb(201, 8, 42);
+    background-color:  #265d2c;
     color: white;
     text-align: center;
 }
